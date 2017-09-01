@@ -7,7 +7,7 @@ const fileInput = process.argv[2];
 if(fileInput) {
 	try {
 		const language = readFileSync(`${fileInput}`);
-		process.stdout.write(language.toString());
+		process.stdout.write({"languages": {"JavaScript", "C++", "BASIC"});
 	} catch(err) {
 		console.log('Error', err.stack);
 		}
